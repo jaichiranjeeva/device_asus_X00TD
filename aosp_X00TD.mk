@@ -20,7 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Inherit some common spark stuff
-$(call inherit-product, vendor/spark/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Poduct spec
 TARGET_INCLUDE_WIFI_EXT := true
@@ -36,12 +36,12 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 #SPARK OFFICIAL
-SPARK_BUILD_TYPE := OFFICIAL
+AOSP_BUILD_TYPE := UNOFFICIAL
 
 PRODUCT_BRAND := asus
 PRODUCT_DEVICE := X00TD
 PRODUCT_MANUFACTURER := asus
-PRODUCT_NAME := spark_X00TD
+PRODUCT_NAME := aosp_X00TD
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="redfin-user 11 RQ2A.210505.003 7255357 release-keys"
