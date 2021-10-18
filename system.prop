@@ -236,3 +236,6 @@ ro.com.google.ime.kb_pad_port_b=1
 #SOC 
 ro.soc.manufacturer=Qualcomm
 ro.soc.model=SDM660
+
+# Recovery
+persist.sys.binary_xml=false
