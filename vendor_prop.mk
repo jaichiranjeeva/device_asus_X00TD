@@ -128,6 +128,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Display (SF)
 PRODUCT_PROPERTY_OVERRIDES += \
+    debug.sf.latch_unsignaled=0 \
     debug.sf.disable_backpressure=1 \
     debug.sf.early_phase_offset_ns=1500000 \
     debug.sf.early_app_phase_offset_ns=1500000 \
@@ -139,10 +140,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.supports_background_blur=1 \
     ro.surface_flinger.protected_contents=true
 
-# Display (Native blur)
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.blurs_are_expensive=1 \
-    persist.sys.sf.disable_blurs=1
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -316,8 +313,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # USB
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=mtp,adb \
-    ro.secure=1
-    
-# Maintainer
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.corvus.maintainer=pkm774
+
